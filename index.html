@@ -231,6 +231,8 @@ Error message and password prompt
 
 <li>$:/temp/info-plugin</li>
 
+<li>$:/temp/NewTagName</li>
+
 <li>$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary</li>
 
 <li>$:/temp/search</li>
@@ -244,6 +246,8 @@ Error message and password prompt
 <li>A Type Of Programming (book)</li>
 
 <li>Hello There</li>
+
+<li>Learning Path - Graphql</li>
 
 <li>What is an Algebra in FP?</li>
 
@@ -9931,7 +9935,7 @@ Error message and password prompt
 <div created="20200715135153965" modified="20200715135209083" title="$:/state/ShowPaletteEditor">
 <pre>no</pre>
 </div>
-<div created="20200715092352420" modified="20200717113455971" title="$:/state/sidebar">
+<div created="20200715092352420" modified="20200717115623945" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20200715135108547" modified="20200715135253983" title="$:/state/tab--1963855381">
@@ -9946,16 +9950,16 @@ Error message and password prompt
 <div created="20200715135345858" modified="20200715135415096" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/TiddlerFields</pre>
 </div>
-<div created="20200715091930826" modified="20200717101724976" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Plugins</pre>
+<div created="20200715091930826" modified="20200717115639579" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
-<div created="20200715091932671" modified="20200717101624506" title="$:/state/tab-2065006209">
-<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
+<div created="20200715091932671" modified="20200717115636903" title="$:/state/tab-2065006209">
+<pre>$:/core/ui/ControlPanel/Saving/General</pre>
 </div>
 <div created="20200715131737450" modified="20200717113422683" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20200715092323407" modified="20200715134232394" title="$:/state/tab/sidebar--595412856">
+<div created="20200715092323407" modified="20200717114549123" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div created="20200715135655964" modified="20200715135655964" title="$:/state/tag-manager/fp">
@@ -9964,7 +9968,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200717113424248" list="[[Hello There]]" modified="20200717113618040" title="$:/StoryList">
+<div created="20200717114542228" list="[[Learning Path - Graphql]] [[What is an Algebra in FP?]] [[A Type Of Programming (book)]] [[Hello There]]" modified="20200717115629150" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10024,6 +10028,9 @@ Error message and password prompt
         }
     }
 }</pre>
+</div>
+<div created="20200717115616697" modified="20200717115616697" title="$:/temp/NewTagName">
+<pre></pre>
 </div>
 <div created="20200715125429054" modified="20200715125429649" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>markdown</pre>
@@ -10200,6 +10207,17 @@ Basically Zettelkasten system + learning in public as [Nilesh Trivedi put it](ht
 If you'd like to set one up for yourself, this should let you hit the ground running: https://learnawesome.org/digitalgardensetup
 
 [digital garden]: https://tomcritchlow.com/2018/10/10/of-gardens-and-wikis/</pre>
+</div>
+<div created="20200717114553882" modified="20200717115619419" tags="programming graphql" title="Learning Path - Graphql" type="text/x-markdown">
+<pre>Take everything after the `I am here` with a (large) grain of salt
+- [How To Graphql](https://www.howtographql.com/)
+    - Core idea is that [[(GQL) schema is driven by Frontend]]
+- Work on or incorporate graphql in an app of yours 
+    - understand the limits of what you can and can't encode in the schema contract
+- Learn about `directives` and how to use them &lt;- `I am Here`
+- Have your GQL Application code be entirely pure
+    - especially tricky would be sequential side-effects (one API request that triggers another)
+- look into [Nestjs](https://medium.com/swlh/building-a-graphql-server-with-nest-js-a9fa169ee6d2) or [Caliban(Scala)](https://www.apollographql.com/blog/scala-js-and-apollo-better-together-b066c6b09af4/) for really performant, FP graphql backends</pre>
 </div>
 <div created="20200715092421976" modified="20200717113607040" tags="fp scala programming notes" title="What is an Algebra in FP?" type="text/x-markdown">
 <pre># Notes for talk:
