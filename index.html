@@ -247,11 +247,21 @@ Error message and password prompt
 
 <li>A Type Of Programming (book)</li>
 
+<li>Charting-focused SPA Architecture</li>
+
+<li>Current Projects</li>
+
 <li>Digital Garden</li>
 
 <li>Hello There</li>
 
 <li>Learning Path - Graphql</li>
+
+<li>Monorepo</li>
+
+<li>Monorepos in the wild</li>
+
+<li>OSS version of Dream11's web-stack</li>
 
 <li>Prioritize Tactics Before Strategy</li>
 
@@ -9978,8 +9988,8 @@ Error message and password prompt
 <div created="20200715131737450" modified="20200718143457514" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20200715092323407" modified="20200717114549123" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20200715092323407" modified="20200718152755489" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20200715135655964" modified="20200715135655964" title="$:/state/tag-manager/fp">
 <pre>open</pre>
@@ -9987,7 +9997,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200718142858871" list="[[Top Of Mind]] [[Use Property-Based Testing]] Testing [[Digital Garden]] [[Hello There]]" modified="20200718144112686" title="$:/StoryList">
+<div created="20200718142858871" list="[[Hello There]]" modified="20200718154616778" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10214,6 +10224,29 @@ QED
 
 Note: This is only possible because these lambdas are all mathematical-functions</pre>
 </div>
+<div created="20200718154910437" modified="20200718155242246" title="Charting-focused SPA Architecture">
+<pre>!! Requirements
+
+* Composable React
+* Sanky Chart
+** [[with drilldown|https://www.amcharts.com/docs/v4/tutorials/drill-down-sankey-diagram/]]
+
+
+!! Options
+
+* https://www.amcharts.com/javascript-charts/
+* https://www.anychart.com/buy/
+* https://www.yworks.com/pages/diagram-visualization-with-typescript
+* https://github.com/palantir/plottable
+* https://www.freecodecamp.org/news/these-are-the-best-javascript-chart-libraries-for-2019-29782f5e1dc2/
+* https://www.monterail.com/blog/javascript-libraries-data-visualization
+* https://blog.theodo.com/2019/08/how-i-chose-the-number-one-react-graphing-library/</pre>
+</div>
+<div created="20200718152918134" modified="20200718155306004" title="Current Projects">
+<pre>* Optimizing the [[Monorepo]] dev-experience
+* What would an [[OSS version of Dream11's web-stack]] look like?
+* [[Charting-focused SPA Architecture]] look like?</pre>
+</div>
 <div created="20200718074329969" modified="20200718143545483" tags="litNotes" title="Digital Garden" type="text/vnd.tiddlywiki">
 <pre>!! Digital Gardens
 
@@ -10230,7 +10263,7 @@ Note: This is only possible because these lambdas are all mathematical-functions
 ** Convert into [[Evergreen Notes|https://notes.andymatuschak.org/z3SjnvsB5aR2ddsycyXofbYR7fCxo7RmKW2be]]
 * [[How to Take Smart Notes | Zettelkasten Method in Roam Research|https://youtu.be/ljyo_WAJevQ]]</pre>
 </div>
-<div created="20200715125250908" modified="20200718121515913" tags="" title="Hello There" type="text/vnd.tiddlywiki">
+<div created="20200715125250908" modified="20200718154508577" tags="" title="Hello There" type="text/vnd.tiddlywiki">
 <pre>This is my public notebook, where I track topics and notes in a more unstructured way before polishing them up for an essay or something.
 
 This space is my take on the idea of a [[Digital Garden]], based on:
@@ -10240,7 +10273,7 @@ This space is my take on the idea of a [[Digital Garden]], based on:
 
 Basically Zettelkasten system + learning in public as [[Nilesh Trivedi put it|https://twitter.com/nileshtrivedi/status/1267682265691156480]]
 
-There's no real starting point, but maybe [[Top Of Mind]] is as good as any.
+There's no real starting point, but maybe [[Top Of Mind]] or [[Current Projects]] are as good as any.
 
 If you'd like to set one up for yourself, this should let you hit the ground running: 
 https://learnawesome.org/digitalgardensetup</pre>
@@ -10256,6 +10289,26 @@ https://learnawesome.org/digitalgardensetup</pre>
 * Have your GQL Application code be entirely pure
 ** especially tricky would be sequential side-effects (one API request that triggers another)
 * look into [[Nestjs|https://medium.com/swlh/building-a-graphql-server-with-nest-js-a9fa169ee6d2]] or [[Caliban(Scala)|https://www.apollographql.com/blog/scala-js-and-apollo-better-together-b066c6b09af4/]] for really performant, FP graphql backends</pre>
+</div>
+<div created="20200718144439469" modified="20200718155245939" tags="thoughtsOn" title="Monorepo">
+<pre>* will add a link to my mono-repo template once it's done
+* For now, evaluating [[Monorepos in the wild]]
+* http://devwithabhi.com/setting-up-react-typescript-monorepo-with-lerna/</pre>
+</div>
+<div created="20200718144824017" modified="20200718151333051" title="Monorepos in the wild">
+<pre>* https://github.com/MatejBransky/starter-monorepo
+* https://github.com/Thinkmill/monorepo
+</pre>
+</div>
+<div created="20200718144954779" modified="20200718151326366" tags="litNotes" title="OSS version of Dream11's web-stack">
+<pre>!! Requirements
+
+* purely functional
+  * composable functionality
+* strong typings in the core components
+  * maybe fork [[action/landComponent|https://github.com/action-land/action-land/blob/master/modules/component/src/component.ts]] and make the needed breaking changes
+* an interpreter for side-effects
+</pre>
 </div>
 <div created="20200718144116275" modified="20200718144327856" title="Prioritize Tactics Before Strategy">
 <pre>* Use [[Wardley's Doctrine|https://doctrine.wardleymaps.com/]] to evaluate health of your organization
@@ -10295,11 +10348,11 @@ Source:
 * [[Eliminate errors with types]]
 * [[Use Property-Based Testing]]</pre>
 </div>
-<div created="20200718121523639" modified="20200718144337788" title="Top Of Mind" type="text/vnd.tiddlywiki">
+<div created="20200718121523639" modified="20200718154240946" title="Top Of Mind" type="text/vnd.tiddlywiki">
 <pre>* Really trying to be intentional about my [[Productivity Stack]] and do something with this wiki
-* Have a new project coming up, wanna really ace that.
 * Right now the world is feeling really hostile, and somehow I have to train the ability to take the long view.
-* Honing my [[Strategic Thinking]]</pre>
+* Honing my [[Strategic Thinking]]
+* Getting my [[carbon footprint &lt; 3 tonnes and slavery-footprint to 0|https://twitter.com/leashless/status/1274900443085393920?s=20]]</pre>
 </div>
 <div created="20200718143345129" modified="20200718143604880" tags="litNotes" title="Use Property-Based Testing">
 <pre>* https://github.com/dubzzz/fast-check
