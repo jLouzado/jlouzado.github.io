@@ -267,6 +267,8 @@ Error message and password prompt
 
 <li>Hello There</li>
 
+<li>How can I help my team love RxJS?</li>
+
 <li>Jessica Kerr - Functional Principles In React</li>
 
 <li>Learning Path - Graphql</li>
@@ -280,6 +282,8 @@ Error message and password prompt
 <li>Prioritize Tactics Before Strategy</li>
 
 <li>Productivity Stack</li>
+
+<li>Reactive Programming</li>
 
 <li>Strategic Thinking</li>
 
@@ -10009,8 +10013,8 @@ Error message and password prompt
 <div created="20200715131737450" modified="20200720175024435" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Drafts</pre>
 </div>
-<div created="20200715092323407" modified="20200720175022792" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20200715092323407" modified="20200721051717742" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20200715135655964" modified="20200715135655964" title="$:/state/tag-manager/fp">
 <pre>open</pre>
@@ -10018,7 +10022,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200719123534339" list="[[DX should express your architecture]] [[Your repo should be self-maintaining]] Monorepo [[Learning Path - Graphql]] [[Charting-focused SPA Architecture]] [[Elm-based UI's]] [[Jessica Kerr - Functional Principles In React]] [[Digital Garden]] [[Hello There]]" modified="20200720173753346" title="$:/StoryList">
+<div list="[[How can I help my team love RxJS?]] [[Reactive Programming]] [[Hello There]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10066,11 +10070,11 @@ Error message and password prompt
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1366&quot;
+            &quot;text&quot;: &quot;1680&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;768&quot;
+            &quot;text&quot;: &quot;1050&quot;
         },
         &quot;$:/info/browser/language&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/language&quot;,
@@ -10442,6 +10446,20 @@ All notes attempt to be [[Evergreen|https://notes.andymatuschak.org/z3SjnvsB5aR2
 
 There's no real starting point, but maybe [[Top Of Mind]] or [[Current Projects]] are as good as any.</pre>
 </div>
+<div created="20200722150738379" modified="20200722150835225" tags="rxjs litNotes" title="How can I help my team love RxJS?">
+<pre>So, by thinking backwards, we are able to design a solution with one less thing to keep track of at a time.
+
+Let’s encapsulate this process in a couple of steps:
+
+* Identify the consumer
+* Name an observable to chain off of, not worrying about what will put values into it
+* Connect the consumer with this new observable
+* Define the first observable and where it gets its own values from
+
+--- 
+
+Source: https://medium.com/@m3po22/how-to-love-reactive-programming-and-not-hate-it-aed9d73db6ab</pre>
+</div>
 <div created="20200719103723383" modified="20200719123739610" tags="talks programming architecture litNotes fp" title="Jessica Kerr - Functional Principles In React">
 <pre>!! Intro 
 
@@ -10569,6 +10587,28 @@ This wiki, obviously, but in general:
 Source:
 
 * [[My Reading Strategy|https://www.youtube.com/watch?v=GgqEkbXSA2Y]]</pre>
+</div>
+<div created="20200722091744195" modified="20200722150736029" tags="resources litNotes programming rxjs" title="Reactive Programming">
+<pre>!! Asynchronous Programming: The End of The Loop
+
+egghead course [[link|https://egghead.io/courses/asynchronous-programming-the-end-of-the-loop]]
+
+* loops are only possible on synchronously available data
+* when working with data that's not here yet, loops won't be possible so we need `forEach`, `map`, `filter` etc.
+
+---
+
+!! Introduction to Reactive Programming
+
+[[link| https://egghead.io/courses/introduction-to-reactive-programming]]
+
+* merge streams with `merge`, which acts as a Union operator
+** events that emerge are from A //or// B
+* startWith: prepend a specific event at the start of the stream
+* combine multiple subscribers to the same stream using `shareReplay` with a value
+** so stream.flatMap(a =&gt; Observable(b)).shareReplay(1)
+* reuse cached result from other stream using `withLatestFrom`
+** clickStream.withLatestFrom(responseStream, (e) =&gt; /**do something */)</pre>
 </div>
 <div created="20200718143718723" modified="20200718144331295" tags="thoughtsOn" title="Strategic Thinking">
 <pre>* [[The Map Is Not The Territory]]
