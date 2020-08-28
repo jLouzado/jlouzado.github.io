@@ -265,6 +265,8 @@ Error message and password prompt
 
 <li>Charting-focused SPA Architecture</li>
 
+<li>Curb Your MicroFrontend</li>
+
 <li>Current Projects</li>
 
 <li>Digital Garden</li>
@@ -322,6 +324,8 @@ Error message and password prompt
 <li>The Truth About Allergies and Food Sensitivity Tests</li>
 
 <li>Top Of Mind</li>
+
+<li>TS &amp; JSX have interop issues</li>
 
 <li>Use Property-Based Testing</li>
 
@@ -10128,7 +10132,7 @@ Source: https://youtu.be/PzEox3szeRc</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200826145554280" list="[[Safe AI might minimize increase of entropy]]" modified="20200826145558076" title="$:/StoryList">
+<div created="20200826145554280" list="[[Curb Your MicroFrontend]] [[TS &amp; JSX have interop issues]] [[Safe AI might minimize increase of entropy]]" modified="20200826145558076" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10195,8 +10199,8 @@ Source: https://youtu.be/PzEox3szeRc</pre>
 <div created="20200715125429054" modified="20200715125429649" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>markdown</pre>
 </div>
-<div created="20200715092331574" modified="20200814212110883" title="$:/temp/search">
-<pre>lag</pre>
+<div created="20200715092331574" modified="20200828185206969" title="$:/temp/search">
+<pre>fronte</pre>
 </div>
 <div created="20200715093435509" modified="20200715135250451" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
@@ -10488,6 +10492,31 @@ Source: https://youtu.be/TqfbAXCCVwE</pre>
 * https://www.freecodecamp.org/news/these-are-the-best-javascript-chart-libraries-for-2019-29782f5e1dc2/
 * https://www.monterail.com/blog/javascript-libraries-data-visualization
 * https://blog.theodo.com/2019/08/how-i-chose-the-number-one-react-graphing-library/</pre>
+</div>
+<div created="20200828185211878" modified="20200828190629342" tags="programming architecture" title="Curb Your MicroFrontend">
+<pre>* Micro-frontends are undeniably cool
+* but if they're mis-applied then they'll end up creating another spaghetti mess, and maybe a monolith would've just been better.
+
+Here's a possible roadmap:
+- start with a monolith:
+- get your framework in place, typings, utilities, everything. use a template, whatever, but this is your starting app.
+- this will grow to a point and start to become un-wieldy and all the tech decisions you messed up will become clearer.
+
+!! The Crossroads
+
+There's a couple of options at this point, depending on team-size
+- put new standards in place, and refactor old code as the need arises to make changes to it
+- if the team is larger, or the code-review processes are weaker, or the need is more pressing, bring in a micro-frontend.
+
+!! uFrontends are only a tool
+
+- what they primarily allow you to do is incremental re-writes.
+- so build your new app in your new standards and gradually carve out pieces from your old application and move them over
+
+!! Range of Quality
+
+- in this manner your software is allowed to spread out over a range of quality, and it does so in a way that when you read the code you know where it is on that spectrum. 
+- So the &quot;movement&quot; of the code (as jessitron would put it) is more visible and can be planned around.</pre>
 </div>
 <div created="20200718152918134" modified="20200718205356201" title="Current Projects">
 <pre>* Optimizing the [[Monorepo]] dev-experience
@@ -10966,6 +10995,45 @@ Source: Dr Mike &amp; Dr. Dave : Stukushttps://youtu.be/1GK4RDxOx-4</pre>
 * Right now the world is feeling really hostile, and somehow I have to train the ability to take the long view.
 * Honing my [[Strategic Thinking]]
 * Getting my [[carbon footprint &lt; 3 tonnes and slavery-footprint to 0|https://twitter.com/leashless/status/1274900443085393920?s=20]]</pre>
+</div>
+<div created="20200828114930594" modified="20200828115410327" tags="typescript gotchas programming" title="TS &amp; JSX have interop issues">
+<pre>If you're trying to declare a generic view function, you might try this:
+
+
+```js
+export const InputText = &lt;T&gt;(props: {
+  model: InputTextContext&lt;T&gt;
+  label: string
+}) =&gt; &lt;div&gt;{props.label}&lt;/div&gt;
+```
+
+You'll get an error where it thinks the `&lt;T&gt;` is a JSX tag. Funnily enough, this won't happen if your function has multiple parameters. 
+
+To solve, there's two ways:
+
+!! Hacky way
+
+Putting a comma [[seems to work|https://stackoverflow.com/a/32697733/3121906]]
+
+```
+export const InputText = &lt;T,&gt;(props: {
+  model: InputTextContext&lt;T&gt;
+  label: string
+}) =&gt; &lt;div&gt;{props.label}&lt;/div&gt;
+```
+
+!! &quot;More Correct&quot; Way
+
+The comma is easy to miss, so maybe a better way is to just [[help `tsc` out a little|https://stackoverflow.com/a/37687827/3121906]]:
+
+```
+export const InputText = &lt;T extends unknown&gt;(props: {
+  model: InputTextContext&lt;T&gt;
+  label: string
+}) =&gt; &lt;div&gt;{props.label}&lt;/div&gt;
+```
+
+As of TS 3.0 this is anyway what an unconstrained generic defaults to. It's a little more verbose, but atleast there's nothing &quot;magical&quot; happening.</pre>
 </div>
 <div created="20200718143345129" modified="20200718143604880" tags="litNotes" title="Use Property-Based Testing">
 <pre>* https://github.com/dubzzz/fast-check
