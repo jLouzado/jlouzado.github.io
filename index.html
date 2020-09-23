@@ -207,6 +207,8 @@ Error message and password prompt
 
 <li>$:/state/image-picker/system--1365487189</li>
 
+<li>$:/state/Link/--1502361583/search</li>
+
 <li>$:/state/showeditpreview</li>
 
 <li>$:/state/ShowPaletteEditor</li>
@@ -265,6 +267,10 @@ Error message and password prompt
 
 <li>Charting-focused SPA Architecture</li>
 
+<li>CSs iS dEcLaRAtiVe</li>
+
+<li>Culture tends toward dilution</li>
+
 <li>Curb Your MicroFrontend</li>
 
 <li>Current Projects</li>
@@ -299,6 +305,8 @@ Error message and password prompt
 
 <li>Learning Path - Graphql</li>
 
+<li>Meta-Problems</li>
+
 <li>Mind-Body Connection</li>
 
 <li>Monorepo</li>
@@ -311,6 +319,8 @@ Error message and password prompt
 
 <li>OSS version of Dream11's web-stack</li>
 
+<li>Perfect Onboarding</li>
+
 <li>Physics is just a Model</li>
 
 <li>Prioritize Tactics Before Strategy</li>
@@ -320,8 +330,6 @@ Error message and password prompt
 <li>Reactive Programming</li>
 
 <li>Safe AI might minimize increase of entropy</li>
-
-<li>Software engineering manifesto</li>
 
 <li>Software is still a craft</li>
 
@@ -10100,6 +10108,9 @@ Source: https://youtu.be/PzEox3szeRc</pre>
 <div created="20200727063424902" modified="20200727063426003" title="$:/state/image-picker/system--1365487189">
 <pre>hide</pre>
 </div>
+<div created="20200923194832501" modified="20200923194836373" title="$:/state/Link/--1502361583/search">
+<pre></pre>
+</div>
 <div created="20200715092930345" modified="20200910033248719" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
@@ -10142,7 +10153,7 @@ Source: https://youtu.be/PzEox3szeRc</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="[[Software engineering manifesto]]" title="$:/StoryList">
+<div created="20200910141618224" list="" modified="20200911065433106" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10190,15 +10201,15 @@ Source: https://youtu.be/PzEox3szeRc</pre>
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;414&quot;
+            &quot;text&quot;: &quot;1680&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;920&quot;
+            &quot;text&quot;: &quot;1050&quot;
         },
         &quot;$:/info/browser/language&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/language&quot;,
-            &quot;text&quot;: &quot;en-IN&quot;
+            &quot;text&quot;: &quot;en-GB&quot;
         }
     }
 }</pre>
@@ -10209,8 +10220,8 @@ Source: https://youtu.be/PzEox3szeRc</pre>
 <div created="20200715125429054" modified="20200715125429649" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>markdown</pre>
 </div>
-<div created="20200715092331574" modified="20200910141615340" title="$:/temp/search">
-<pre>https</pre>
+<div created="20200715092331574" modified="20200911065437265" title="$:/temp/search">
+<pre></pre>
 </div>
 <div created="20200715093435509" modified="20200715135250451" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
@@ -10502,6 +10513,31 @@ Source: https://youtu.be/TqfbAXCCVwE</pre>
 * https://www.freecodecamp.org/news/these-are-the-best-javascript-chart-libraries-for-2019-29782f5e1dc2/
 * https://www.monterail.com/blog/javascript-libraries-data-visualization
 * https://blog.theodo.com/2019/08/how-i-chose-the-number-one-react-graphing-library/</pre>
+</div>
+<div created="20200911065438028" modified="20200911065717397" tags="gotchas programming" title="CSs iS dEcLaRAtiVe">
+<pre>!! TextArea
+
+* for whatever reason, textarea will overflow margins of it's parents
+* prevent resize overflow with `resize:vertical`
+* add a wrapper and inherit the margin and padding so it respects the parent
+** For some reason this only happens on the right side so there's that. </pre>
+</div>
+<div created="20200911130005651" modified="20200911130708333" tags="design entrepreneurship startups" title="Culture tends toward dilution">
+<pre>This is roughly how I've seen culture evolve in a startup:
+
+* founders have an idea, make a PoC, build a team and start sales
+* if their hypothesis fails they pivot or run out of runway and fold.
+* if they succeed they get growth, and start scaling.
+* following the `make it work, make it right, make it fast` maxim, they're probably still at the `make it work` stage.
+* If growth keeps coming, things never really progress to a make it right because you need to constantly re-invent and make things work.
+
+Now, as much as this applies to tech, this also applies to the Culture of the company. Here Culture defined as all the explicit and implicit ways in which the company gets work done.
+
+When there's only ten people in a team and things start to break it's fine, because the people have strong enough bonds that things are fine. But there's no documentation, there's no architecture diagrams. Nothing exists, it's all in their heads.
+
+So now when more people are added, the same mechanics apply and all the technical debt adds to all the process debt and things keep growing and growing.
+
+This is the natural way things tend to go afaik; and with software we've realized that mature teams refactor as they go. Somehow  we haven't really developed the Culture equivalent of that yet.</pre>
 </div>
 <div created="20200828185211878" modified="20200828190629342" tags="programming architecture" title="Curb Your MicroFrontend">
 <pre>* Micro-frontends are undeniably cool
@@ -10877,6 +10913,12 @@ Source: [[Lagrangian Mechanics - A beautiful way to look at the world|https://ww
 ** especially tricky would be sequential side-effects (one API request that triggers another)
 * look into [[Nestjs|https://medium.com/swlh/building-a-graphql-server-with-nest-js-a9fa169ee6d2]] or [[Caliban(Scala)|https://www.apollographql.com/blog/scala-js-and-apollo-better-together-b066c6b09af4/]] for really performant, FP graphql backends</pre>
 </div>
+<div created="20200917055128887" modified="20200917055314954" tags="thoughtsOn" title="Meta-Problems">
+<pre>Imagine creating a product to help other people create products
+
+* if you succeed in making that product, the tactics and strategy and knowledge generated by that endeavour is _also_ part of the product that helps other people make products. xD
+* it's so meta, basically all activity is now part and parcel of exploring the solution space.</pre>
+</div>
 <div created="20200723142830647" modified="20200723145235489" tags="thoughtsOn" title="Mind-Body Connection">
 <pre>* [[Allergies are treated the same way as anxieties]]</pre>
 </div>
@@ -10931,6 +10973,14 @@ There's a framework called `AppRun` that tries to implement Elm in TSC and the g
 * a framework: https://github.com/yysun/apprun
 * a freakin [[book|https://www.amazon.com/Practical-Application-Development-AppRun-High-Performance/dp/1484240685/]] on Amazon
 </pre>
+</div>
+<div created="20200923194805424" modified="20200923195153325" tags="thoughtsOn" title="Perfect Onboarding">
+<pre>Three components:
+
+* well defined [[Employee|https://blog.trello.com/optimize-employee-manual]] [[handbook|https://infoinspired.com/helpful-tips/read-the-inspirational-valve-handbook-for-new-employees-pdf/]] 
+** should also be editable, and have well-defined [[categories|]]
+* a repo with all the links and documents and everything
+* a [[Slack workflow|https://slack.com/intl/en-in/blog/productivity/automate-tasks-in-slack-with-workflow-builder]] that reads from there and pings people</pre>
 </div>
 <div created="20200723090148460" modified="20200723090351740" tags="science" title="Physics is just a Model">
 <pre>* It's tempting to think of certain things as being rock-solid so that we can use it as a base for more abstract systems
@@ -10993,22 +11043,6 @@ egghead course [[link|https://egghead.io/courses/asynchronous-programming-the-en
 inspired by [[Lagrangian Mechanics]], what if we have the agent calculate various options and find ways to minimise the number of irreversible changes to the environment.
 
 So for example, moving the baby out of the way might be less efficient but overall it's a smaller increase of entropy.</pre>
-</div>
-<div created="20200915041532122" modified="20200915042455166" tags="thoughtsOn" title="Software engineering manifesto">
-<pre>* for a long time I thought writing software was about firefighting. 
-* I was in search of this mythical company where we could invest in doing things right!
-* But even when I was in charge of architecture myself things still went funky.
-* Things changed when I joined Dream11 and witnessed their frontend stack, it made me excited to be a frontend engineer again.
-
-What I want for every engineer is to be able to take joy in their work, and not constantly be in firefighting mode. When you're always in crisis management, you don't get time to really think and keep the big picture in mind.
-
-What do we need to know:
-
-* What Software is and how does it age?
-* What are the economic conditions under which Software is written?
-* What are the economics of hiring?
-* How can functional programming help us manage complexity and what is it really trying to do?
-* What's an ideal scenario look like with designers, programmers and managers all working together. </pre>
 </div>
 <div created="20200830192905359" modified="20200830193805705" tags="programming" title="Software is still a craft">
 <pre>People think of software as something industrial, but as it's predominantly practiced Software-Development is still more of a craft.
