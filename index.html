@@ -289,6 +289,8 @@ Error message and password prompt
 
 <li>FP UI Links</li>
 
+<li>Giving good feedback</li>
+
 <li>Hello There</li>
 
 <li>How can I help my team love RxJS?</li>
@@ -344,6 +346,8 @@ Error message and password prompt
 <li>Top Of Mind</li>
 
 <li>TS &amp; JSX have interop issues</li>
+
+<li>Typescript</li>
 
 <li>Use Property-Based Testing</li>
 
@@ -10153,7 +10157,7 @@ Source: https://youtu.be/PzEox3szeRc</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200910141618224" list="[[Perfect Onboarding]]" modified="20201005052110861" title="$:/StoryList">
+<div list="[[Giving good feedback]] Typescript [[Perfect Onboarding]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10201,11 +10205,11 @@ Source: https://youtu.be/PzEox3szeRc</pre>
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1680&quot;
+            &quot;text&quot;: &quot;1366&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;1050&quot;
+            &quot;text&quot;: &quot;768&quot;
         },
         &quot;$:/info/browser/language&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/language&quot;,
@@ -10220,8 +10224,8 @@ Source: https://youtu.be/PzEox3szeRc</pre>
 <div created="20200715125429054" modified="20200715125429649" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>markdown</pre>
 </div>
-<div created="20200715092331574" modified="20200911065437265" title="$:/temp/search">
-<pre></pre>
+<div created="20200715092331574" modified="20201009115639085" title="$:/temp/search">
+<pre>typesc</pre>
 </div>
 <div created="20200715093435509" modified="20200715135250451" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
@@ -10728,6 +10732,19 @@ I think this would be a good balance between the &quot;estimates are not schedul
   - https://github.com/gcanti/fp-ts
 </pre>
 </div>
+<div created="20201009120906987" modified="20201009145144962" tags="" title="Giving good feedback">
+<pre>The principle is simple: the harder something is to do, the less people will do it. These are the requirements to making change happen AFAIK
+Requirements to give effective feedback (as far as I can tell):
+- have a good relationship with captain
+- pick your battles, be strategic about feedback
+- if the person is not in your club be extra careful, you don't know what their constraints are
+- be charming and positive with the feedback, you should not be seen as being a complainer
+- condense your feedback to actionable insights; people don't want to be given more problems to solve
+- but also properly define the problem and have data to prove it; people don't like being told what to do
+At the same time your work &amp; your reputation should be absolutely spotless, proportional to the change you're trying to make.
+- the more clubs that are involved, the more scrutiny will be on you
+- any chink in your armor can be taken out of context to bring down your whole initiative.</pre>
+</div>
 <div created="20200715125250908" modified="20200719123850575" tags="" title="Hello There" type="text/vnd.tiddlywiki">
 <pre>This is my public notebook, where I track topics and notes in a more unstructured way before polishing them up for more &quot;published&quot; use; Think more [[Digital Garden]] than library.
 
@@ -11151,6 +11168,50 @@ export const InputText = &lt;T extends unknown&gt;(props: {
 ```
 
 As of TS 3.0 this is anyway what an unconstrained generic defaults to. It's a little more verbose, but atleast there's nothing &quot;magical&quot; happening.</pre>
+</div>
+<div created="20201009115645736" modified="20201009145147262" tags="resources" title="Typescript">
+<pre>  # Resource List
+
+- Here you'll find whatever you need to know to get started with the project
+
+## Contribution Guideline
+
+- If you have a new Resource you'd like to add, please submit a PR
+  - Be sure to categorize it correctly.
+- This file is not meant to be exhaustive, it must just be up-to-date.
+- These resources are the knowledge base of the team
+- Therefore, an SDE-II should reasonably be able to complete upto `intermediate` in under a week.
+  - this article's usefulness is inversely proportional to it's bloat (per topic)
+  - Therefore, let's manage that piece rigorously.
+
+# Table of Contents
+
+- [Typescript](#typescript)
+
+## Typescript
+
+### Beginner
+
+- Up and Running with Typescript
+  - Start from lesson 15 (previous lessons are deprecated)
+  - https://egghead.io/courses/up-and-running-with-typescript
+
+### Intermediate
+
+- Advanced Static Types in TypeScript
+  - https://egghead.io/courses/advanced-static-types-in-typescript
+
+### Advanced
+
+- TypeScript Evolution
+  - https://mariusschulz.com/blog/series/typescript-evolution
+
+### Avoid
+
+- `Use Types Effectively in TS` | Egghead.io
+  - Covers much the same ground as `Up and Running with TS`
+  - Implicitly advocates typecasting without typeguards
+  - more OOP oriented</pre>
 </div>
 <div created="20200718143345129" modified="20200718143604880" tags="litNotes" title="Use Property-Based Testing">
 <pre>* https://github.com/dubzzz/fast-check
