@@ -143,6 +143,8 @@ Error message and password prompt
 
 <li>&quot;Good Enough&quot; Architecture • Stefan Tilkov</li>
 
+<li>“Skip”: exponential-backoff deferral mechanisms and fuzzy inboxes</li>
+
 <li>$:/config/AutoSave</li>
 
 <li>$:/config/DefaultMoreSidebarTab</li>
@@ -307,6 +309,8 @@ Error message and password prompt
 
 <li>How can I help my team love RxJS?</li>
 
+<li>how to remember your life</li>
+
 <li>Howto: Improve usability of long-list selection</li>
 
 <li>Intro to Functional Programming</li>
@@ -318,6 +322,10 @@ Error message and password prompt
 <li>Lagrangian Mechanics</li>
 
 <li>Learning Path - Graphql</li>
+
+<li>Learning via Spaced-Repetition</li>
+
+<li>make space for &quot;forgetting&quot;</li>
 
 <li>Meta-Problems</li>
 
@@ -459,6 +467,38 @@ Error message and password prompt
 
 ---
 Source: https://youtu.be/PzEox3szeRc</pre>
+</div>
+<div created="20201015070733256" modified="20201015105514993" tags="litNotes" title="“Skip”: exponential-backoff deferral mechanisms and fuzzy inboxes">
+<pre>!! The problem
+
+* spaced-repeition systems are mostly efficient enough
+* the bigger issue is keeping the deck relevant enough that you //want// to keep coming back and revising
+* if the deck feels like a chore, you're not going to come back to revise
+
+!! Obvious fixes
+
+*  don’t “stockpile” material for some future day; 
+* avoid writing prompts in response to a feeling of “should”; 
+* write about connections, consequences, implications—not just about facts; 
+* avoid tangential “orphan questions”; etc. 
+* If you don’t add anything new for a while, your sessions will feel stale.
+* If you often forget an answer, you must refactor the question or risk future eye-rolls.
+
+!! Curation
+
+* grooming of the deck is the obvious solution
+* however, deletion &quot;feels&quot; permanent because we know we might not go back to look over it again
+
+!! Skipping
+
+* instead of deleting, spaced repetition systems should allow for a skip.
+* skip it once, it comes back next week, next month, next year, and then effectively it's forever archived.
+* in a sense it looks the same as normal progress and maybe that's a problem, but also maybe it's not; maybe you're saying you're kinda done with that card and letting it fade away.
+
+
+--- 
+
+ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 </div>
 <div created="20200715134207993" modified="20200715134207993" title="$:/config/AutoSave">
 <pre>no</pre>
@@ -10175,7 +10215,7 @@ Source: https://youtu.be/PzEox3szeRc</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20201013185700315" list="[[Data and Reality]] [[Domains of Reality]] [[Art and Science of Data Modelling]] [[Hiring Engineers]] [[programming books to read]] [[Resilient software is made by Resilient Teams]] [[Top Of Mind]] [[Hello There]]" modified="20201013203634261" title="$:/StoryList">
+<div created="20201015070705313" list="[[Learning via Spaced-Repetition]] [[Hello There]]" modified="20201015070705313" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10223,15 +10263,15 @@ Source: https://youtu.be/PzEox3szeRc</pre>
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;414&quot;
+            &quot;text&quot;: &quot;1093&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;920&quot;
+            &quot;text&quot;: &quot;614&quot;
         },
         &quot;$:/info/browser/language&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/language&quot;,
-            &quot;text&quot;: &quot;en-IN&quot;
+            &quot;text&quot;: &quot;en-US&quot;
         }
     }
 }</pre>
@@ -10242,8 +10282,8 @@ Source: https://youtu.be/PzEox3szeRc</pre>
 <div created="20200715125429054" modified="20200715125429649" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>markdown</pre>
 </div>
-<div created="20200715092331574" modified="20201013185731224" title="$:/temp/search">
-<pre></pre>
+<div created="20200715092331574" modified="20201015053706577" title="$:/temp/search">
+<pre>repeti</pre>
 </div>
 <div created="20200715093435509" modified="20200715135250451" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
@@ -10869,6 +10909,16 @@ Let’s encapsulate this process in a couple of steps:
 
 Source: https://medium.com/@m3po22/how-to-love-reactive-programming-and-not-hate-it-aed9d73db6ab</pre>
 </div>
+<div created="20201015065010492" modified="20201015065337422" tags="litNotes videos" title="how to remember your life">
+<pre>* take photos while you're at a place
+* once you've taken the photos, put the camera away so that your brain has time to capture the non-visual information
+* at regular intervals, go through the photos and delete duplicates or extras
+* that repeated process reinforces memory 
+
+---
+
+ref: https://www.youtube.com/watch?v=GLy4VKeYxD4</pre>
+</div>
 <div created="20200910032625158" modified="20200910033340504" tags="litNotes programming UX" title="Howto: Improve usability of long-list selection">
 <pre>* normal ux is to have the items displayed in the list, and add a search-bar to help sort
 * if the items are known, try and reveal all of them more fully
@@ -11028,6 +11078,24 @@ Source: [[Lagrangian Mechanics - A beautiful way to look at the world|https://ww
 * Have your GQL Application code be entirely pure
 ** especially tricky would be sequential side-effects (one API request that triggers another)
 * look into [[Nestjs|https://medium.com/swlh/building-a-graphql-server-with-nest-js-a9fa169ee6d2]] or [[Caliban(Scala)|https://www.apollographql.com/blog/scala-js-and-apollo-better-together-b066c6b09af4/]] for really performant, FP graphql backends</pre>
+</div>
+<div created="20201015053708477" modified="20201015105522537" tags="resources" title="Learning via Spaced-Repetition">
+<pre>* [[Spaced Repetition Promotes Efficient and Effective Learning: Policy Implications for Instruction|https://www.dartmouth.edu/~cogedlab/pubs/Kang%282016%2CPIBBS%29.pdf]]
+* [[Implementation Intentions - Strong Effects of Simple Plans|http://kops.uni-konstanz.de/bitstream/handle/123456789/10101/99Goll_ImpInt.pdf?sequence=1&amp;isAllowed=y]]
+* [[Andy Matushak - Unusual applications of spaced repetition memory systems|https://notes.andymatuschak.org/zrs5GnK6DEm1NcajMfqJ1n93PZwSHCEP9Drt]]
+* [[“Skip”: exponential-backoff deferral mechanisms and fuzzy inboxes]]</pre>
+</div>
+<div created="20201015064816771" modified="20201015065407019" tags="" title="make space for &quot;forgetting&quot;">
+<pre>While researching [[Learning via Spaced-Repetition]] I came across this quote:
+
+
+&lt;&lt;&lt;
+So most people (myself included) will tend not to delete as much material as they should, which means their sessions will be less emotionally connected than they should be.
+&lt;&lt;&lt;
+
+ basically he's talking about deleting content to maintain the &quot;joy&quot; of what's remaining.
+
+Similarly, in [[how to remember your life]] there's a similar process of deletion being the thing that allows increased focus on what's important.</pre>
 </div>
 <div created="20200917055128887" modified="20200917055314954" tags="thoughtsOn" title="Meta-Problems">
 <pre>Imagine creating a product to help other people create products
