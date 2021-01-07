@@ -275,6 +275,8 @@ Error message and password prompt
 
 <li>Building Resilient Frontend Architecture • Monica Lent</li>
 
+<li>Category Theory in Life - Eugenia Chang</li>
+
 <li>changing habits with spaced-repetition</li>
 
 <li>Charting-focused SPA Architecture</li>
@@ -338,6 +340,8 @@ Error message and password prompt
 <li>How to communicate</li>
 
 <li>how to remember your life</li>
+
+<li>How To Stop Worrying &amp; Start Loving Technical Debt</li>
 
 <li>How to write more</li>
 
@@ -412,6 +416,8 @@ Error message and password prompt
 <li>Strategic Thinking</li>
 
 <li>Study The Classics</li>
+
+<li>Technical Debt is not something to &quot;love&quot;</li>
 
 <li>Technical Debt Run Wild</li>
 
@@ -10279,7 +10285,7 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210107054528523" list="[[How to write more]] [[You need a positioning statement]] [[Guide To Freelancing w/ Jonathan Stark]]" modified="20210107192404541" title="$:/StoryList">
+<div created="20210107054528523" list="" modified="20210107193233740" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10682,6 +10688,16 @@ Instead of speed decreasing over time, it'd be great if it increased over time. 
 
 ---
 Source: https://youtu.be/TqfbAXCCVwE</pre>
+</div>
+<div created="20210107193902630" modified="20210107195151834" tags="litNotes talks math" title="Category Theory in Life - Eugenia Chang">
+<pre>17:00 
+
+* use a hasse diagram to graph a set of unordered items
+* so if you take rich, white, male as three categories then you get a diagram of all the permutations.
+
+---
+
+ref: https://youtu.be/ho7oagHeqNc</pre>
 </div>
 <div created="20201016103946644" modified="20201016104035748" title="changing habits with spaced-repetition">
 <pre>create `when-then` cards as Nicky talks about here: [[paper lifehacks|https://www.patreon.com/posts/paper-lifehacks-42410088]]
@@ -11288,6 +11304,19 @@ Iterate, or even nest the above steps.j
 
 ref: https://www.youtube.com/watch?v=GLy4VKeYxD4</pre>
 </div>
+<div created="20210107192513748" modified="20210107192848612" tags="litNotes" title="How To Stop Worrying &amp; Start Loving Technical Debt">
+<pre>So despite the article, the whole article is about how technical debt is actually something that's hard to keep track of and hard to model and lists a lot of negative things about it.
+
+But then it ends with this idea that like hey basically tech &amp; org debt is financial engineering.
+
+Great, fantastic. Very true point, I agree with it actually.
+
+Problem is it's shared by people who just want to skip over the part where we figure out how to measure and keep it under control. 
+
+---
+
+https://marker.medium.com/why-you-should-learn-to-stop-worrying-and-love-technical-debt-55bb5684f94c</pre>
+</div>
 <div created="20210107054535103" modified="20210107133617044" tags="writing" title="How to write more">
 <pre>The trap I often find myself in is that I sit down to blog, the research for it makes me feel like I don't know enough. And so I stop to go study the topic first and come back to it later. Days, Weeks (sometimes months) later I'm satisfied that I'm enough of an expert and return to the blank canvas and it's back to square one.
 
@@ -11779,6 +11808,46 @@ an alternative would be to just allow for [[spaced repetition to lower the stake
 <div created="20200814144219974" modified="20200903060213357" tags="litNotes book" title="Study The Classics">
 <pre>---
 Source: apprenticeship patterns book</pre>
+</div>
+<div created="20210107192424314" modified="20210107195418938" tags="" title="Technical Debt is not something to &quot;love&quot;">
+<pre>There's this article that drives me crazy everytime I think about it, wrote up my reaction here: [[How To Stop Worrying &amp; Start Loving Technical Debt]]
+
+This is sort of my response to it, I want to have conversations about technical debt that are as mature as conversations about financial debt.
+
+* where does technical debt come from?
+** change and uncertainty. software engineering is more accurately called complexity engineering.
+** it's not something that can ever be eliminated entirely, because even if you commit to doing all the research up front the market will have moved on by the time you're done describing the problem completely.
+* symptoms of technical debt with [[examples|examples of debt laden systems]]
+* effects of technical debt, 
+** people get burnt out, meaning the only person that can survive is someone who has a strong support system to take care of -ve externalities
+** therefore minorities are at a disadvantage
+** the company is forced to constantly keep raising, constantly hire, constantly drive costs higher.
+
+!! Ways to deal with tech debt
+
+Be strategic, duh. do wardley mapping to figure out what parts of the system are important and not, and figure out health-check and observability metrics for each component.
+
+let's take an NGO as an example, the learnings might transfer to a bootstrapped startup:
+
+* have a team that's purely focused on writing code that just works. Zero architecture, nothing; they're probably you're most inexperienced devs or they're mercs.
+** these are your explorers
+* as you start getting feedback, extract the patterns and start building your architecture
+** slowly introduce static analysis, typed languages etc
+** take the POC code the explorers wrote and make it a little better quality
+* design your repo, so code can continue to be written in a rough way and gradually become better.
+
+General points:
+
+* better planning - buckets, not buffers.
+* better prioritization - use Hasse diagrams to visualize priorities
+** basically the same as in [[Category Theory in Life - Eugenia Chang]] but the categories would be things like Effort, Value &amp; Impact or whatever.
+** automate the prioritisation, so that planning becomes smoother
+* self-maintaining repos
+** dependancy cruiser
+** soft guarantees in the outer repo, so that individual packages can go stricter without breaking
+*** gradually increase the lowest level of strictness as people get more accustomed to static types
+
+</pre>
 </div>
 <div created="20201226203815292" modified="20201226204032464" tags="" title="Technical Debt Run Wild">
 <pre>* https://twitter.com/KR1573N/status/1342742738761084929?s=09
