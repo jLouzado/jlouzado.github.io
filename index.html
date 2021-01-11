@@ -47,7 +47,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>Joel Louzado's TiddlyWiki — a non-linear personal web notebook</title>
+<title>Joel Louzado's Wiki — a non-linear notebook</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~-->
 
 <!--~~ Raw markup ~~-->
@@ -149,9 +149,13 @@ Error message and password prompt
 
 <li>$:/config/DefaultMoreSidebarTab</li>
 
+<li>$:/config/DefaultSidebarTab</li>
+
 <li>$:/config/Navigation/openLinkFromInsideRiver</li>
 
 <li>$:/config/Navigation/UpdateAddressBar</li>
+
+<li>$:/config/Navigation/UpdateHistory</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all</li>
 
@@ -166,6 +170,8 @@ Error message and password prompt
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/unfold-all</li>
 
 <li>$:/config/RelinkOnRename</li>
+
+<li>$:/config/TextEditor/EnableToolbar</li>
 
 <li>$:/config/Tiddlers/TitleLinks</li>
 
@@ -192,6 +198,8 @@ Error message and password prompt
 <li>$:/palette</li>
 
 <li>$:/plugins/tiddlywiki/markdown</li>
+
+<li>$:/SiteSubtitle</li>
 
 <li>$:/SiteTitle</li>
 
@@ -586,11 +594,17 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div created="20200715135456175" modified="20200715135506684" title="$:/config/DefaultMoreSidebarTab">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
+<div created="20210111072805448" modified="20210111072805448" title="$:/config/DefaultSidebarTab">
+<pre>$:/core/ui/SideBar/More</pre>
+</div>
 <div created="20200718121744778" modified="20200718121744778" title="$:/config/Navigation/openLinkFromInsideRiver">
 <pre>above</pre>
 </div>
 <div created="20200715135536492" modified="20200715135536492" title="$:/config/Navigation/UpdateAddressBar">
 <pre>permalink</pre>
+</div>
+<div created="20210111072838086" modified="20210111072838086" title="$:/config/Navigation/UpdateHistory">
+<pre>yes</pre>
 </div>
 <div created="20200715125152813" modified="20200715125152813" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/close-all">
 <pre>show</pre>
@@ -613,14 +627,17 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div created="20200717113557837" modified="20200717113557837" title="$:/config/RelinkOnRename">
 <pre>yes</pre>
 </div>
+<div created="20210111072816045" modified="20210111072820067" title="$:/config/TextEditor/EnableToolbar">
+<pre>yes</pre>
+</div>
 <div created="20200715135552118" modified="20200715135552118" title="$:/config/Tiddlers/TitleLinks">
 <pre>yes</pre>
 </div>
-<div created="20200715135606007" modified="20200715135612491" title="$:/config/Toolbar/ButtonClass">
-<pre>tc-btn-rounded</pre>
+<div created="20200715135606007" modified="20210111072848893" title="$:/config/Toolbar/ButtonClass">
+<pre>tc-btn-boxed</pre>
 </div>
-<div created="20200715135623472" modified="20200715135634060" title="$:/config/Toolbar/Text">
-<pre>no</pre>
+<div created="20200715135623472" modified="20210111072913837" title="$:/config/Toolbar/Text">
+<pre>yes</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
@@ -10018,8 +10035,8 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
-<div created="20200715135111811" modified="20200715135836900" title="$:/palette">
-<pre>$:/palettes/SpartanDay</pre>
+<div created="20200715135111811" modified="20210111072757491" title="$:/palette">
+<pre>$:/palettes/Blanca</pre>
 </div>
 <div dependents="" description="Markdown parser based on remarkable by Jon Schlinkert" list="readme usage" name="Markdown" plugin-type="plugin" title="$:/plugins/tiddlywiki/markdown" type="application/json" version="5.1.22">
 <pre>{
@@ -10226,8 +10243,11 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
     }
 }</pre>
 </div>
-<div created="20200715091920970" modified="20200715091922725" title="$:/SiteTitle">
-<pre>Joel Louzado's ~TiddlyWiki</pre>
+<div created="20210111073048895" modified="20210111073051401" title="$:/SiteSubtitle">
+<pre>a non-linear notebook</pre>
+</div>
+<div created="20200715091920970" modified="20210111073044533" title="$:/SiteTitle">
+<pre>Joel Louzado's Wiki</pre>
 </div>
 <div created="20200715093447885" modified="20200715131803932" title="$:/state/folded/$:/ControlPanel">
 <pre>show</pre>
@@ -10265,20 +10285,20 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div created="20200715135108547" modified="20200715135253983" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Palette</pre>
 </div>
-<div created="20200715135342696" modified="20200715135435212" title="$:/state/tab--2112689675">
-<pre>$:/core/ui/ControlPanel/Basics</pre>
+<div created="20200715135342696" modified="20210111073113409" title="$:/state/tab--2112689675">
+<pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
 <div created="20200715125422585" modified="20200715135707934" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Plugins</pre>
 </div>
-<div created="20200715135345858" modified="20200715135415096" title="$:/state/tab--959111941">
-<pre>$:/core/ui/ControlPanel/TiddlerFields</pre>
+<div created="20200715135345858" modified="20210111073134554" title="$:/state/tab--959111941">
+<pre>$:/core/ui/ControlPanel/LoadedModules</pre>
 </div>
 <div created="20200720173325993" modified="20200720173329513" title="$:/state/tab-1163638994">
 <pre>$:/core/ui/MoreSideBar/Plugins/Theme</pre>
 </div>
-<div created="20200715091930826" modified="20200905121300324" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Saving</pre>
+<div created="20200715091930826" modified="20210111073029625" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20200715091932671" modified="20200905121222096" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -10286,8 +10306,8 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div created="20200715131737450" modified="20200814211835100" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20200715092323407" modified="20201224110227391" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20200715092323407" modified="20210111072729112" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div created="20200715135655964" modified="20200715135655964" title="$:/state/tag-manager/fp">
 <pre>open</pre>
@@ -10295,7 +10315,7 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210110144323937" list="[[You can start coding with just a Word Processor]] [[Breaking the JS Speed Limit]] [[Beginner's guide to blissful software]] [[Software Lifecycle Reimagined]] [[Hello There]]" modified="20210110144323937" title="$:/StoryList">
+<div created="20210110144323937" list="[[You can start coding with just a Word Processor]] [[Breaking the JS Speed Limit]] [[Beginner's guide to blissful software]] [[Software Lifecycle Reimagined]] [[Hello There]]" modified="20210111072858530" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
