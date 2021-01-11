@@ -12100,7 +12100,7 @@ The approach I'd recommend for breaking out of that rut is borrowed from this br
 
 When it comes to teams though, really make sure you're tracking the right thing. Track Business value directly, make sure you have the ability to produce business value over time. Measure the happiness of your employees, if you can.</pre>
 </div>
-<div created="20201226164036048" modified="20210111200757409" tags="coursesTaken litNotes" title="Better Web Typography">
+<div created="20201226164036048" modified="20210111210358826" tags="coursesTaken litNotes" title="Better Web Typography">
 <pre>!! L1 : Intro to Typography
 
 * [[web is 95% typography|https://ia.net/topics/the-web-is-all-about-typography-period]]
@@ -12126,7 +12126,30 @@ When it comes to teams though, really make sure you're tracking the right thing.
 
 &gt; Horizontal rhythm mostly impacts the legibility while vertical rhythm impacts the readability of the text and establishes a sense of visual hierarchy.
 
-* tracking (letter-spacing)</pre>
+* tracking (letter-spacing)
+
+!!! Setting horizontal rhythm
+
+* don't letter-space unless absolutely necessary
+** maybe you have a small text in all-caps, then maybe add some letter-spacing
+** maybe you have some title-text that's looking like the letters are drifting, you can add some negative letter-spacing to bring it back together
+* don't justify on web, cuz the hyphenation algos aren't that great and you get these white-space gaps
+* watch-out for kerning
+
+!!! Setting vertical rhythm
+
+* set the horizontal rhythm, let's say you have fontSize 20px and lineHeight 30px
+* line-width (measure) about 600px
+* so now your line-height is your vertical rhythm
+
+For example:
+
+# Your h1's lineHeight should be a multiple of this
+#* fontSize 55px, lineHeight 60px
+# your margin top should be 90px, bottom margin 30px
+#* that way it's visually connected to your text
+
+!! L7 - Modular Scale</pre>
 </div>
 <div created="20200728141645229" modified="20200811125813494" tags="litNotes" title="Boundaries - Gary Bernhardt">
 <pre>* there's a problem with testing
