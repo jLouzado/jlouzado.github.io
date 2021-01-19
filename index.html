@@ -351,7 +351,7 @@ Error message and password prompt
 
 <li>coding requires a mental-model of a machine</li>
 
-<li>CS61A - UC Berkeley, Sprint 2010 - Brian Harvey</li>
+<li>CS 61A - UC Berkeley, Sprint 2010 - Brian Harvey</li>
 
 <li>CSs iS dEcLaRAtiVe</li>
 
@@ -11682,7 +11682,7 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div created="20200715135153965" modified="20200715135209083" title="$:/state/ShowPaletteEditor">
 <pre>no</pre>
 </div>
-<div created="20200715092352420" modified="20210111101128927" title="$:/state/sidebar">
+<div created="20200715092352420" modified="20210119031133508" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20210111101157444" modified="20210111101203880" title="$:/state/tab--1678288484">
@@ -11718,8 +11718,8 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div created="20200715131737450" modified="20210111113125363" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20200715092323407" modified="20210116204414577" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20200715092323407" modified="20210119011700663" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20200715135655964" modified="20200715135655964" title="$:/state/tag-manager/fp">
 <pre>open</pre>
@@ -11727,7 +11727,7 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="[[Hello There]]" title="$:/StoryList">
+<div created="20210119011721490" list="[[CS 61A - UC Berkeley, Sprint 2010 - Brian Harvey]] [[Hello There]]" modified="20210119011721490" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11794,8 +11794,8 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div created="20200715125429054" modified="20200715125429649" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>markdown</pre>
 </div>
-<div created="20200715092331574" modified="20210114145122128" title="$:/temp/search">
-<pre></pre>
+<div created="20200715092331574" modified="20210119011712465" title="$:/temp/search">
+<pre>sic</pre>
 </div>
 <div created="20210111083529706" modified="20210111185735580" title="$:/temp/tobibeer/preview-1-tiddler">
 <pre>Technical Debt is not something to &quot;love&quot;</pre>
@@ -12327,7 +12327,7 @@ references:
 
 ---</pre>
 </div>
-<div created="20201230121835077" modified="20201230142734317" tags="litNotes" title="CS61A - UC Berkeley, Sprint 2010 - Brian Harvey">
+<div created="20201230121835077" modified="20210119031130372" tags="litNotes" title="CS 61A - UC Berkeley, Sprint 2010 - Brian Harvey">
 <pre>!! L02 Functional Programming
 
 Benefits of functional programming
@@ -12352,8 +12352,34 @@ Both are equivalent (produce the same result) if the entire expression can be mo
 
 Ref: SICP 1.1.5
 
+!! L04 - Higher Order Procedure (part 2)
 
- 
+!!! First class data type
+
+For something to be considered first class, it should be possible to use as:
+
+* value of a variable
+* argument of a procedure
+* value returned by a procedure
+* member of an aggregate, and
+* anonymous
+
+!! composition
+
+* defined as `compose f g`
+* domain of `f`, should include range of `g` for it to work
+** but other than that there's not really too much constraint
+
+!! rapid prototyping and source-size
+
+* apparently the number of lines of &quot;debugged&quot; code written in a day is language agnostic, and it's ~2
+* so use Lisp-style code to rapidly prototype, and get it working
+** first few iterations are to get the customer to say &quot;it's perfect, except it's too slow&quot; and then you go into C or something to optimize
+
+!! variable assignment in Scheme
+
+uses `let` to be able to assign a procedure to a variable
+
 </pre>
 </div>
 <div created="20200911065438028" modified="20200911065717397" tags="gotchas programming" title="CSs iS dEcLaRAtiVe">
