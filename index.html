@@ -229,6 +229,8 @@ Error message and password prompt
 
 <li>$:/plugins/jd/mob</li>
 
+<li>$:/plugins/jd/mob/config/config</li>
+
 <li>$:/plugins/snowgoon88/edit-comptext</li>
 
 <li>$:/plugins/tiddlywiki/markdown</li>
@@ -294,6 +296,8 @@ Error message and password prompt
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
 <li>$:/StoryList</li>
+
+<li>$:/temp/advancedsearch</li>
 
 <li>$:/temp/info-plugin</li>
 
@@ -388,6 +392,8 @@ Error message and password prompt
 <li>FP Resources</li>
 
 <li>FP UI Links</li>
+
+<li>git-fu</li>
 
 <li>Giving good feedback</li>
 
@@ -520,6 +526,8 @@ Error message and password prompt
 <li>Use Property-Based Testing</li>
 
 <li>Web-Dev Toolbelt</li>
+
+<li>webpack</li>
 
 <li>What does the One Ring represent? - Hello Future Me</li>
 
@@ -11236,6 +11244,34 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
     }
 }</pre>
 </div>
+<div created="20171109145547252" creator="JD" modified="20210125093253575" modifier="JD" title="$:/plugins/jd/mob/config/config" type="application/x-tiddler-dictionary">
+<pre>freshinstall: yes
+defaultconfirm: cancel
+configtype: list
+fontsize: default
+scrollbars: show
+barpreset: 4
+storyfix: no
+titlebaradjust: no
+topbar: search
+topbarchoice: hide
+searchbar: yes
+radbuttop: fixedsearch
+searchbarchoice: simple
+bottombar: controls
+radbuttopfixedsearchops: hide
+radbuttopcontrolsops: hide
+radbuttopmobbuttonsops: hide
+radbuttoptitleops: hide
+bottombarcontrolsops: hide
+bottombarmobbuttonsops: hide
+barpreset1ops: hide
+barpreset2ops: hide
+barpreset3ops: hide
+barpreset4ops: hide
+searchbutton: simple
+focus: show</pre>
+</div>
 <div author="AlainD" core-version="&gt;=5.1.13" dependents="" description="Editor with some on-line completion capabilities" list="readme usage examples" plugin-type="plugin" source="https://github.com/snowgoon88/TW5-extendedit" title="$:/plugins/snowgoon88/edit-comptext" type="application/json" version="0.9.1">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -11684,7 +11720,7 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div created="20200715135153965" modified="20200715135209083" title="$:/state/ShowPaletteEditor">
 <pre>no</pre>
 </div>
-<div created="20200715092352420" modified="20210119031133508" title="$:/state/sidebar">
+<div created="20200715092352420" modified="20210125093244036" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20210111101157444" modified="20210111101203880" title="$:/state/tab--1678288484">
@@ -11720,8 +11756,8 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div created="20200715131737450" modified="20210111113125363" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20200715092323407" modified="20210119011700663" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20200715092323407" modified="20210128140614089" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div created="20200715135655964" modified="20200715135655964" title="$:/state/tag-manager/fp">
 <pre>open</pre>
@@ -11729,7 +11765,10 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210119011721490" list="[[Structure and Interpretation of Computer Programs (SICP)]] [[CS 61A - UC Berkeley, Sprint 2010 - Brian Harvey]] [[Hello There]]" modified="20210119011721490" title="$:/StoryList">
+<div created="20210125093259426" list="" modified="20210128110948431" title="$:/StoryList">
+<pre></pre>
+</div>
+<div created="20210123111748521" modified="20210123111748521" title="$:/temp/advancedsearch">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11796,8 +11835,8 @@ ref: https://www.patreon.com/posts/skip-exponential-40672377</pre>
 <div created="20200715125429054" modified="20200715125429649" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>markdown</pre>
 </div>
-<div created="20200715092331574" modified="20210119011712465" title="$:/temp/search">
-<pre>sic</pre>
+<div created="20200715092331574" modified="20210128140610774" title="$:/temp/search">
+<pre></pre>
 </div>
 <div created="20210111083529706" modified="20210111185735580" title="$:/temp/tobibeer/preview-1-tiddler">
 <pre>Technical Debt is not something to &quot;love&quot;</pre>
@@ -12678,6 +12717,14 @@ I think this would be a good balance between the &quot;estimates are not schedul
 -  Functional Programming in Typescript
   - https://github.com/gcanti/fp-ts
 </pre>
+</div>
+<div created="20210128140612999" modified="20210128140722263" tags="" title="git-fu">
+<pre>* don't use `git branch` for scripts, because the output is more geared toward human consumption
+* use `git symbolic-ref` instead, because it's more stable
+
+ref: https://git-blame.blogspot.com/2013/06/checking-current-branch-programatically.html 
+
+---</pre>
 </div>
 <div created="20201009120906987" modified="20201009145144962" tags="" title="Giving good feedback">
 <pre>The principle is simple: the harder something is to do, the less people will do it. These are the requirements to making change happen AFAIK
@@ -13726,6 +13773,30 @@ Motivation: [[Don't use react|https://dev.to/ender_minyard/why-you-should-stop-u
 * [[Crank|https://crank.js.org/blog/introducing-crank]]
 * [[Laravel + Vue|https://medium.com/@kevinkirchner/a-ready-to-try-concept-in-response-to-second-guessing-the-modern-web-6946ec4d0598]]
 * [[Svelte|https://svelte.dev/]]</pre>
+</div>
+<div created="20210125150735390" modified="20210128111012214" source="https://survivejs.com/webpack/what-is-webpack/" tags="litNotes" title="webpack">
+<pre>```
+const path = require(&quot;path&quot;);
+const webpack = require(&quot;webpack&quot;);
+
+module.exports = {
+  ...
+  // loaders
+  module: {
+    rules: [
+      { test: /\.css$/, use: [&quot;style-loader&quot;, &quot;css-loader&quot;] },
+      { test: /\.js$/, use: &quot;swc-loader&quot;, exclude: /node_modules/ },
+    ],
+  },
+  // plugins
+  plugins: [new webpack.DefinePlugin({ HELLO: &quot;hello&quot;})
+};
+```
+
+Order of Resolution: 
+
+* plugins are registered from top to bottom but loaders follow the opposite rule. 
+* That means if you add a loader definition after the existing ones and it matches the same test, it will be evaluated first.</pre>
 </div>
 <div created="20200720114833087" modified="20210111143315184" source="https://youtu.be/S2OWHhH-RPg" tags="litNotes writing videosWatched" title="What does the One Ring represent? - Hello Future Me">
 <pre>&gt; 1:25 is the quote from JRR Tolkien
