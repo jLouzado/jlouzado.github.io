@@ -11756,8 +11756,8 @@ focus: show</pre>
 <div created="20200715131737450" modified="20210111113125363" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20200715092323407" modified="20210128140614089" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20200715092323407" modified="20210128163739878" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20200715135655964" modified="20200715135655964" title="$:/state/tag-manager/fp">
 <pre>open</pre>
@@ -11765,7 +11765,7 @@ focus: show</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210125093259426" list="" modified="20210128110948431" title="$:/StoryList">
+<div created="20210125093259426" list="git-fu" modified="20210128163741070" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210123111748521" modified="20210123111748521" title="$:/temp/advancedsearch">
@@ -12718,13 +12718,18 @@ I think this would be a good balance between the &quot;estimates are not schedul
   - https://github.com/gcanti/fp-ts
 </pre>
 </div>
-<div created="20210128140612999" modified="20210128140722263" tags="" title="git-fu">
+<div created="20210128140612999" modified="20210128163831009" tags="" title="git-fu">
 <pre>* don't use `git branch` for scripts, because the output is more geared toward human consumption
 * use `git symbolic-ref` instead, because it's more stable
 
 ref: https://git-blame.blogspot.com/2013/06/checking-current-branch-programatically.html 
 
----</pre>
+---
+
+* list of files changed between two branches
+* `git diff --name-only b1 b2`
+
+ref: http://sushihangover.github.io/git-getting-a-list-of-files-changed-between-branches/</pre>
 </div>
 <div created="20201009120906987" modified="20201009145144962" tags="" title="Giving good feedback">
 <pre>The principle is simple: the harder something is to do, the less people will do it. These are the requirements to making change happen AFAIK
