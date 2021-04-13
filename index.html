@@ -571,6 +571,8 @@ Error message and password prompt
 
 <li>TS &amp; JSX have interop issues</li>
 
+<li>Twitter inspo</li>
+
 <li>Typescript</li>
 
 <li>Use Property-Based Testing</li>
@@ -596,6 +598,8 @@ Error message and password prompt
 <li>You can start coding with just a Word Processor</li>
 
 <li>You need a positioning statement</li>
+
+<li>You suck at Excel - Joel Spolsky</li>
 
 <li>Your Diversity metrics should include Retention</li>
 
@@ -11814,8 +11818,8 @@ focus: show</pre>
 <div created="20200715131737450" modified="20210111113125363" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20200715092323407" modified="20210408120959480" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20200715092323407" modified="20210324074712358" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20200715135655964" modified="20200715135655964" title="$:/state/tag-manager/fp">
 <pre>open</pre>
@@ -11823,7 +11827,7 @@ focus: show</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="" title="$:/StoryList">
+<div created="20210413150352600" list="[[You suck at Excel - Joel Spolsky]] [[Hello There]]" modified="20210413150352600" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210123111748521" modified="20210303074258084" title="$:/temp/advancedsearch">
@@ -11896,8 +11900,8 @@ focus: show</pre>
 <div created="20200715125429054" modified="20200715125429649" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>markdown</pre>
 </div>
-<div created="20200715092331574" modified="20210408120955668" title="$:/temp/search">
-<pre></pre>
+<div created="20200715092331574" modified="20210413150351562" title="$:/temp/search">
+<pre>twitter</pre>
 </div>
 <div created="20210111083529706" modified="20210111185735580" title="$:/temp/tobibeer/preview-1-tiddler">
 <pre>Technical Debt is not something to &quot;love&quot;</pre>
@@ -14204,6 +14208,13 @@ export const InputText = &lt;T extends unknown&gt;(props: {
 
 As of TS 3.0 this is anyway what an unconstrained generic defaults to. It's a little more verbose, but atleast there's nothing &quot;magical&quot; happening.</pre>
 </div>
+<div created="20210413150400326" modified="20210413150518444" tags="" title="Twitter inspo">
+<pre>Based off [[How To Build Audience on Twitter - Daniel Vassallo]] I wanted to make a list of cool twitter accounts, especially their bios:
+
+* https://twitter.com/imdeepjoshi
+
+&gt; Founder @Hexorialstudio · Design @defidollar · Prev @0xPolygon · Community @IxDA  Creator · Tweets → Product, Design, DeFi &amp; Blockchain</pre>
+</div>
 <div created="20201009115645736" modified="20210108091646706" tags="resources" title="Typescript">
 <pre>! Resource List
 
@@ -14422,6 +14433,45 @@ Here's mine for my &quot;Personal Brand&quot;
 !!! Fourth
 
 &gt; If you're a startup, the engine of your growth is your ability to make changes to your customer experience. Have you noticed that engine starting to slow down? Releases missed because of bugs, expensive launches not making a splash? Let me help you get that engine running full-speed again.</pre>
+</div>
+<div created="20210413093615638" modified="20210413151647328" source="https://www.youtube.com/watch?v=0nbkaYsR94c" tags="litNotes" title="You suck at Excel - Joel Spolsky">
+<pre>!! R1C1 mode
+
+* there's &quot;Baby mode&quot; which references by Letters, then there's &quot;Adult mode&quot; called `R1C1` notation that references the actual row and column
+* writing a formula and expanding down looks like it's magically interpolating the next cell, but what's actually happening is more interesting.
+* so a formula based on the cell above might be RC[-1] or something, so when you copy and paste it's actually the same formula repeating.
+* if you want to manually make an absolute reference, you can say D$24 to always points to that cell
+* you can toggle absolute references by hitting F4 (on windows) when the cell is selected, instead of typing the `$` symbol over and over
+
+!! Expanding into range
+
+* don't select and paste, or drag the handle down
+** sometimes, but not always
+* if you double-click the handle it fills out the range
+* leave whitespace around your tables, so that way ctrl + a just selects the table
+
+!! VLookup Madness
+
+* don't use VLookup
+* use MATCH, then INDEX
+** it's faster
+** it's more readable
+
+!! Readability
+
+* you can name an entire column and reference it in formulae
+** if you reference it in a cell it automatically does an intersection with that column and uses just that
+* you can name particular cells, so that you can reference it with a human readable name
+
+!! Adding rows
+
+* select tables and format them as tables, you automatically get a ton of functionality for free
+* inserting rows works, you get automatic filtering
+* if you change the formula in the top cell of a table it automatically applies the same formula to the rest of the column
+
+!! Pivot tables
+
+* pivot tables are amazing, use them to get intelligence on your data</pre>
 </div>
 <div created="20210107093000406" modified="20210107094420204" tags="" title="Your Diversity metrics should include Retention">
 <pre>It's not enough to just hire &quot;Diverse&quot; people and then let them get pushed into a corner in the company and pulled up everytime there's a photo-op.
