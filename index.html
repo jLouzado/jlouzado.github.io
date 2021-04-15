@@ -411,6 +411,8 @@ Error message and password prompt
 
 <li>examples of debt laden systems</li>
 
+<li>examples of things invented while recovering from plague</li>
+
 <li>Feature-flags have the same architecture as a/b tests</li>
 
 <li>FP Resources</li>
@@ -478,6 +480,8 @@ Error message and password prompt
 <li>Monorepo</li>
 
 <li>Monorepos in the wild</li>
+
+<li>Monte Carlo Simulation</li>
 
 <li>More Meaningful Typography</li>
 
@@ -11782,8 +11786,8 @@ focus: show</pre>
 <div created="20200715135153965" modified="20200715135209083" title="$:/state/ShowPaletteEditor">
 <pre>no</pre>
 </div>
-<div created="20200715092352420" modified="20210324074705156" title="$:/state/sidebar">
-<pre>yes</pre>
+<div created="20200715092352420" modified="20210415084704251" title="$:/state/sidebar">
+<pre>no</pre>
 </div>
 <div created="20210111101157444" modified="20210111101203880" title="$:/state/tab--1678288484">
 <pre>$:/core/ui/TiddlerInfo/Tagging</pre>
@@ -11827,7 +11831,7 @@ focus: show</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210413150352600" list="[[You suck at Excel - Joel Spolsky]] [[Hello There]]" modified="20210413150352600" title="$:/StoryList">
+<div created="20210413150352600" list="[[examples of things invented while recovering from plague]] [[Monte Carlo Simulation]] [[Case Study: Designing a gender-transition app]] [[You suck at Excel - Joel Spolsky]] [[Hello There]]" modified="20210415085545329" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210123111748521" modified="20210303074258084" title="$:/temp/advancedsearch">
@@ -11900,8 +11904,8 @@ focus: show</pre>
 <div created="20200715125429054" modified="20200715125429649" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>markdown</pre>
 </div>
-<div created="20200715092331574" modified="20210413150351562" title="$:/temp/search">
-<pre>twitter</pre>
+<div created="20200715092331574" modified="20210414072819694" title="$:/temp/search">
+<pre></pre>
 </div>
 <div created="20210111083529706" modified="20210111185735580" title="$:/temp/tobibeer/preview-1-tiddler">
 <pre>Technical Debt is not something to &quot;love&quot;</pre>
@@ -12898,6 +12902,9 @@ I think this would be a good balance between the &quot;estimates are not schedul
 ** instead the more secure (and cheaper) option would be to just refactor the system
 </pre>
 </div>
+<div created="20210415085550417" modified="20210415085721987" title="examples of things invented while recovering from plague">
+<pre>Thinking about the pandemic, people have often mentioned that Newton invented Calculus while on quarantine from the Black Plague. I'm sure there's other examples</pre>
+</div>
 <div created="20210202074209929" modified="20210202074759558" tags="litNotes" title="Feature-flags have the same architecture as a/b tests">
 <pre>Read this idea in an article somewhere but I don't remember where. But the point holds, basically both are about controlling access to a feature for one or many users based on one or many conditions. </pre>
 </div>
@@ -13591,6 +13598,61 @@ if you're already using flow or something:
 <div created="20200718144824017" modified="20200718151333051" title="Monorepos in the wild">
 <pre>* https://github.com/MatejBransky/starter-monorepo
 * https://github.com/Thinkmill/monorepo
+</pre>
+</div>
+<div author="MIT OCW" created="20210415084702651" creator="MIT OCW" modified="20210415092530871" name="MIT 6.0002 Introduction to Computational Thinking and Data Science" source="https://youtu.be/OgO1gpXSUzU" tags="litNotes coursesTaken" title="Monte Carlo Simulation">
+<pre>!! Introduction
+
+* &quot;invented&quot; by Stanislaw Ulam
+* bored while sick, he tried to work out the probability that he would win solitaire
+* the combinatronics being too complex he wanted to just run a bunch of simulations and calculate the odds from that
+* not wanting to simulate by hand, he contacted his good friend [[Von Neumann]] and asked if he could simulate it on his new fancy machine.
+* yet another item for [[examples of things invented while recovering from plague]]
+
+!! Examples
+
+* if you were simulating coin flips, you would need less flips to be able to estimate
+* if you were simulating roulette, the game is still relatively simple but there's much more possible outcomes so you'd need to simulate close to a million to start getting confidence about your expected outcome
+
+!! Related concepts
+
+* [[Gamblers Fallacy]]
+* [[Regression to the mean]]
+
+They sound the same, but the difference is illustrated here:
+* in ten spins of roulette say you get 10 reds
+* gamblers fallacy says, there will be fewer than 5 reds in the next ten spins so that things &quot;even out&quot;
+* regression to the mean says, there will be fewer than 10 reds (so that the overall mean is closer to the mathematical expectation)
+
+!! How many samples do we need for confidence?
+
+!!! Calculate variance
+
+* variance is sum of squares of differences from mean
+** squaring let's us ignore direction
+** it also ends up emphasizing the outliers though, cuz it's squared
+
+!!! Calculate std deviation
+
+ * std deviation is context dependant, it doesn't mean anything without knowing what the mean is
+
+!!! Confidence intervals
+
+* if you have mean and std dev, you can apply the [[Empirical Rule]]
+* 68% of results will be within one std deviation
+* 95% will be within 1.96 std deviations, and
+* 99.7% will be within 3 std deviations
+
+so now you can say, we think M will happen, and it will range from M +/- 1 std-deviations 68% of the time
+* using the empirical rule we can have a discussion about how confident we are in the result
+* if we run a higher number of simulations and the confidence interval has shrunk we can say our confidence has improved
+
+!!! Assumptions with Empirical Rule
+
+* No bias in mean; just as likely to guess low or high
+* errors are distributed in a normal curve
+** to me this seems like the same as the above, no systematic errors biasing the result
+
 </pre>
 </div>
 <div created="20210114085321158" modified="20210114085512742" source="https://alistapart.com/article/more-meaningful-typography/" tags="litNotes design" title="More Meaningful Typography">
