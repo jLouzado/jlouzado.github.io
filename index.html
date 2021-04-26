@@ -381,6 +381,8 @@ Error message and password prompt
 
 <li>compromise tech-company security with dependancy confusion</li>
 
+<li>const enums give you the best of TS and JS</li>
+
 <li>Constraint vs Restraint</li>
 
 <li>CS 61A - UC Berkeley, Sprint 2010 - Brian Harvey</li>
@@ -406,6 +408,8 @@ Error message and password prompt
 <li>Dockerize a React-App</li>
 
 <li>Domains of Reality</li>
+
+<li>Draft of 'New Tiddler'</li>
 
 <li>DX should express your architecture</li>
 
@@ -11845,7 +11849,7 @@ focus: show</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210422134211240" list="[[Limits create opportunity]] [[Web-Dev Toolbelt]] [[Hello There]]" modified="20210422134211240" title="$:/StoryList">
+<div created="20210426064837511" list="[[const enums give you the best of TS and JS]] Typescript [[Draft of 'New Tiddler']] [[Hello There]]" modified="20210426064954304" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210123111748521" modified="20210303074258084" title="$:/temp/advancedsearch">
@@ -11918,8 +11922,8 @@ focus: show</pre>
 <div created="20200715125429054" modified="20200715125429649" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>markdown</pre>
 </div>
-<div created="20200715092331574" modified="20210422134503556" title="$:/temp/search">
-<pre></pre>
+<div created="20200715092331574" modified="20210426064835695" title="$:/temp/search">
+<pre>typesc</pre>
 </div>
 <div created="20210111083529706" modified="20210111185735580" title="$:/temp/tobibeer/preview-1-tiddler">
 <pre>Technical Debt is not something to &quot;love&quot;</pre>
@@ -12712,6 +12716,14 @@ references:
 * if a public-named package exists, that's the one that the package manager preferences.
 * once you have the code running, to log whatever information, it was siphoned out using DNS requests</pre>
 </div>
+<div created="20210426065106101" modified="20210426065247788" source="https://robinpokorny.com/blog/typescript-enums-i-want-to-actually-use/" title="const enums give you the best of TS and JS">
+<pre>* normal enums produce a lot of ugly generated code
+* other options include discriminated unions, manually writing out dictionary of values, etc
+** all have their own pitfalls
+* the author finally discovered that using a const enum makes it so there's no generated code, all the values are inlined and it's all great.
+** only downside remaining is that now there's no trace of the original enum if you want to log anything at run time
+** tbh that's not a big deal for me because I want most of my debugging via tests anyway</pre>
+</div>
 <div created="20210415160157717" modified="20210415160415250" source="https://www.differencebetween.com/difference-between-constraint-and-vs-restraint/" tags="thesaurus" title="Constraint vs Restraint">
 <pre>* Constraints are limits that are harder to change / remove.
 ** limitations imposed by the law, or by morality for example
@@ -12919,6 +12931,9 @@ To me, a domain of reality is a particular, bounded way of being in and understa
 * Another `practice of view` centered around viewing reality as inherently beautiful
 * Everyone is a Buddha
 * Your senses are sexy naked dieties offering you food and drink</pre>
+</div>
+<div created="20210426064832424" draft.of="New Tiddler" draft.title="New Tiddler" modified="20210426064832424" tags="" title="Draft of 'New Tiddler'">
+<pre></pre>
 </div>
 <div created="20200720173757225" modified="20200720173943267" title="DX should express your architecture">
 <pre>* assert aspects of architecture with: https://www.npmjs.com/package/dependency-cruiser
@@ -14405,7 +14420,7 @@ As of TS 3.0 this is anyway what an unconstrained generic defaults to. It's a li
 
 &gt; Founder @Hexorialstudio · Design @defidollar · Prev @0xPolygon · Community @IxDA  Creator · Tweets → Product, Design, DeFi &amp; Blockchain</pre>
 </div>
-<div created="20201009115645736" modified="20210108091646706" tags="resources" title="Typescript">
+<div created="20201009115645736" modified="20210426065004622" tags="resources" title="Typescript">
 <pre>! Resource List
 
 * Here you'll find whatever you need to know to get started with the project
@@ -14447,7 +14462,11 @@ As of TS 3.0 this is anyway what an unconstrained generic defaults to. It's a li
 
 !! Project Setup
 
-- https://medium.com/its-tinkoff/typescript-tricks-that-allow-you-to-scale-your-app-endlessly-95a0ff3d160d</pre>
+- https://medium.com/its-tinkoff/typescript-tricks-that-allow-you-to-scale-your-app-endlessly-95a0ff3d160d
+
+!! General Tips
+
+* [[const enums give you the best of TS and JS]]</pre>
 </div>
 <div created="20200718143345129" modified="20200718143604880" tags="litNotes" title="Use Property-Based Testing">
 <pre>* https://github.com/dubzzz/fast-check
