@@ -463,6 +463,8 @@ Error message and password prompt
 
 <li>How to Debug your Team - Lisa van Gelder</li>
 
+<li>How to design a Priorization Formula</li>
+
 <li>how to remember your life</li>
 
 <li>How To Stop Worrying &amp; Start Loving Technical Debt</li>
@@ -652,6 +654,8 @@ Error message and password prompt
 <li>What is an Algebra in FP?</li>
 
 <li>What is Good Design?</li>
+
+<li>What is good Product Design?</li>
 
 <li>When to start worrying about Quality?</li>
 
@@ -11882,7 +11886,7 @@ focus: show</pre>
 <div created="20200715131737450" modified="20210111113125363" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20200715092323407" modified="20210501091735275" title="$:/state/tab/sidebar--595412856">
+<div created="20200715092323407" modified="20210523131118495" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20200715135655964" modified="20200715135655964" title="$:/state/tag-manager/fp">
@@ -11891,7 +11895,7 @@ focus: show</pre>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210523080336981" list="[[What is Good Design?]] [[Sorry, Bella Poarch, this IS ‘Build a B*tch’]] [[The Anxiety of Influencers - Barrett Swanson]] [[eTilak - Defending against Facial Recognition]]" modified="20210523120233826" title="$:/StoryList">
+<div created="20210523080336981" list="[[How to design a Priorization Formula]] [[What is good Product Design?]] [[What is Good Design?]] [[Sorry, Bella Poarch, this IS ‘Build a B*tch’]] [[The Anxiety of Influencers - Barrett Swanson]] [[eTilak - Defending against Facial Recognition]]" modified="20210523131128345" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210123111748521" modified="20210303074258084" title="$:/temp/advancedsearch">
@@ -11964,7 +11968,7 @@ focus: show</pre>
 <div created="20200715125429054" modified="20200715125429649" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>markdown</pre>
 </div>
-<div created="20200715092331574" modified="20210523122337275" title="$:/temp/search">
+<div created="20200715092331574" modified="20210523130958158" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20210111083529706" modified="20210430180318539" title="$:/temp/tobibeer/preview-1-tiddler">
@@ -13646,6 +13650,76 @@ So, How do we install a sense of urgency into the team?
 
 * https://www.progression.fyi/ for a list of the levelling and skil matrices of other companies</pre>
 </div>
+<div created="20210523125359218" modified="20210523135857630" tags="productManagement" title="How to design a Priorization Formula">
+<pre>Take a Framework like [[What is good Product Design?]], which posits five characteristics of good product design
+
+{{What is good Product Design?}}
+
+How would we go about converting this into a Prioritization Model that others can contribute to.
+
+!! Step 1 - Construct a Formula
+
+* Score each value along the same scale
+** [[Fibonacci Scale]] is usually the best choice
+** using the same scale for everything normalizes each attribute to the same range so that you can meaningfully compare the items along multiple axes
+
+In original article, the (implicit) formula is:
+
+Score = Usefulness + Learning Curve + Ease of Use + Coolness + Ease of Implementation
+
+Some notable features:
+
+* all factors are weighted equally, nothing has an overdue effect on the decision
+* Using &quot;Ease of Implementation&quot; incentivizes easy designs, but doesn't actively disincentivize &quot;difficult&quot; designs.
+
+!! Step 2 - Think about you Formula
+
+In particular, think about the real constraints you're working with:
+
+# projected availability of engineering bandwidth
+# system stability
+#* this is going to affect the speed with which you can make changes
+# business context
+#* do we already have a stable business model?
+
+!! Step 3 - Expect people to try to &quot;Game&quot; the Formula
+
+For example let's consider `Ease Of Implementation`:
+
+* you &quot;gain&quot; points when an idea but you don't necessarily &quot;lose&quot; anything for having a difficult idea
+** The minimum score an idea can have is `0`
+** so an idea that takes 6 months and an idea that takes 1 year both get the same score (of 0) 
+* So the problem is that this attribute is not really in-line with reality; i.e. there's potentially no upper-bound on engineering effort
+* What might happen is that people come up with really ambitious ideas (that score high on the other attributes) but that will all be realized on very long time-scales
+** bad-actors especially can use this to create products that launch with a big bang, and make sure they're not around when the results need to actually be shown.
+
+!! Step 4 - Tweak the Formula
+
+To continue the same example, let's think about how to better represent `Ease of Implementation`
+
+* What we could do is track `Effort` instead,
+* and then tweak the formula:
+
+Score = (Usefulness + Learning Curve + Ease of Use + Coolness) / Effort
+
+So now, you actively lose points the larger the scope of your idea is. In a distributed decision-making environment this could incentivize people to align themselves towards good outcomes:
+
+* big ideas can still score points if they're broken up into smaller tasks
+* each individual step also needs to have user value, otherwise it'll lose out on the other dimensions
+* the fact that this feedback is coming from the formula means you don't need someone from Engineering to think about it
+
+!! Step 5 - Visualize it
+
+* If there are &lt; 4 terms a [[Hasse Diagram]] might be better
+* if there are more, a Spider Graph might be better
+
+&gt; Note: [[A Spider-graph is just a Hasse Diagram from a different viewing angle]]
+
+!! Step 6 - Share it!
+
+* the more people have eyes on it the better, especially considering the [[Two Kinds of Errors]] that can creep into decision making
+</pre>
+</div>
 <div created="20201015065010492" modified="20210111140854093" source="https://www.youtube.com/watch?v=GLy4VKeYxD4" tags="litNotes videosWatched" title="how to remember your life">
 <pre>* take photos while you're at a place
 * once you've taken the photos, put the camera away so that your brain has time to capture the non-visual information
@@ -15193,7 +15267,7 @@ Order of Resolution:
 Source: [Fun(c) 2018.4: Adam Rosien - why do Functional Programmers always talk about Algebra(s)?](https://youtu.be/s2ay9nEW3ak)
 </pre>
 </div>
-<div created="20210523122338134" modified="20210523123541253" source="" title="What is Good Design?">
+<div created="20210523122338134" modified="20210523124449145" source="http://ui-patterns.com/blog/What-is-good-design" tags="design litNotes" title="What is Good Design?">
 <pre>Good design is not just about aesthetics, it's also about fulfilling a purpose and fulfilling it well.
 
 * functional
@@ -15202,14 +15276,24 @@ Source: [Fun(c) 2018.4: Adam Rosien - why do Functional Programmers always talk 
 ** user-oriented
 * engages through intrinsic motivation
 * aesthetic &amp; honest
-* as little design as possible
-
-References:
-
-* http://ui-patterns.com/blog/What-is-good-design
-
-
-</pre>
+* as little design as possible</pre>
+</div>
+<div created="20210523124426913" modified="20210523130629061" source="https://uxdesign.cc/what-is-a-good-product-design-6aa6c2a3fdeb" tags="litNotes" title="What is good Product Design?">
+<pre># Usefulness
+#* from `doesn't solve`, to
+#* `solves the problem as well as others`
+# Slope of Learning Curve (For Users)
+#* from `impossible to understand`, to
+#* `instantly understandable`
+# Ease of Use
+#* `PITA`, to
+#* `it's a breeze`
+# Coolness (User Delight)
+#* from `yawn`, to
+#* `omg`
+# Ease of Implementation
+#* from `it'll take ages` to
+#* `ready tomorrow`</pre>
 </div>
 <div created="20210202115149075" modified="20210202133458346" tags="programming" title="When to start worrying about Quality?">
 <pre>No real definitive answer possible here, but I think there are definitely some guidelines that are broadly applicable for most projects:
